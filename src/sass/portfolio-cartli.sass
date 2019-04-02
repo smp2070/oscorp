@@ -1,0 +1,55 @@
+.cartli
+	margin-bottom: 90px
+	+sm(padding-top, 50px)
+	&__title
+		margin-bottom: 20px
+		+sm(padding, 0 15px)
+.cartli-top
+	display: block
+	max-width: 1920px
+	margin: 0 auto 80px
+	+lg(margin-bottom, 20px)
+	+sm(margin-bottom, 40px)
+.cartli-about
+	display: flex
+	align-items: flex-end
+	max-width: 1920px
+	margin: 0 auto 156px
+	+lg-block()
+		flex-direction: column
+		align-items: center
+		margin-bottom: 50px
+	+sm(margin-bottom, 50px)
+	&__right
+		margin: 0 40px
+		+lg-block()
+			order: -1
+			margin-bottom: 50px
+		+sm(margin, 0 15px 50px)
+	&__right-txt
+		margin-bottom: 42px
+		line-height: 30px
+		max-width: 708px
+		+sm-block()
+			max-width: none
+.cartli-bottom
+	display: grid
+	grid-template-columns: 1fr 1fr
+	+lg-block()
+		grid-template-columns: 1fr
+		grid-gap: 50px
+	&__left
+		justify-self: end
+		align-self: end
+		+lg(justify-self, center)
+	&__left-txt
+		max-width: 708px
+		line-height: 30px
+		margin-bottom: 130px
+		padding-left: 15px
+		+lg-block()
+			justify-self: center
+			margin: 0
+			padding: 0 15px
+	&__right
+		justify-self: center

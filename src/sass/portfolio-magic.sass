@@ -1,0 +1,47 @@
+.magik
+	margin-bottom: 136px
+	+sm(padding-top, 50px)
+.magik-top
+	margin-bottom: 100px
+	display: flex
+	align-items: flex-end
+	+lg-block()
+		flex-direction: column
+		align-items: center
+		margin-bottom: 30px
+	&__middle
+		margin: 0 100px
+		+lg-block()
+			margin: 0
+			padding: 0 15px
+		&--title
+			+sm-block()
+				margin-bottom: 30px
+				padding: 0 15px
+		&--txt
+			+lg(max-width, none)
+			max-width: 644px
+			margin-bottom: 30px
+.magik-bottom
+	display: grid
+	grid-template-columns: max-content 1fr
+	grid-column-gap: 100px
+	padding: 0 55px
+	+lg-block()
+		grid-template-columns: 1fr
+		padding: 0 15px
+		justify-items: center
+		grid-gap: 30px
+	&__right
+		align-self: end
+		+lg(order, -1)
+		&--txt
+			max-width: 644px
+			margin-bottom: 38px
+			+lg-block()
+				max-width: none
+				margin: 0
+
+@media screen and (min-width: 1921px)
+	.magik-top__middle
+		flex-grow: 1

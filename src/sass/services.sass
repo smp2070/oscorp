@@ -1,0 +1,67 @@
+.services
+	padding-top: 25px
+	padding-bottom: 200px
+	+sm(padding-top, 50px)
+	+sm(padding-bottom, 60px)
+	&__item
+		display: flex
+		margin: 0 -10px
+		+sm(margin, 0)
+		+sm(flex-direction, column)
+	&__link
+		position: relative
+		height: 220px
+		width: 100%
+		margin: 0 10px
+		margin-bottom: 20px
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		display: flex
+		flex: 1
+		align-items: flex-end
+		transition: 1s
+		+sm-block()
+			margin: 10px 0
+			height: 110px
+		&::before
+			content: ""
+			background: rgba(19, 19, 19, 0.4)
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 0
+			top: 0
+			transition: 0.3s
+		&:hover
+			flex-basis: 260px
+			+lg(flex-basis, 0)
+			+sm(flex-basis, auto)
+			.services__title
+				padding-left: 38%
+				background-color: rgba(19, 19, 19, 0.7)
+				+lg(padding-left, 50px)
+				+lg(white-space, initial)
+			&::before
+				background: rgba(188, 0, 0, 0.4)
+	&__title
+		margin: 0 0 15px 0
+		padding-left: 50px
+		padding-right: 20px
+		color: #fff
+		line-height: 1.8
+		font-size: 36px
+		font-family: "Open Sans", sans-serif
+		font-weight: 700
+		white-space: nowrap
+		z-index: 2
+		transition: 1s
+		+md(font-size, 29px)
+		+sm(font-size, 24px)
+		+sm(padding, 0 15px)
+
+// $services: strategy, smm, development, video, design, ad, email-marketing, copywriting, sem, website-content
+//
+// @each $serv in $services
+// 	.services__link--#{$serv}
+// 		background-image: url('/img/services_#{$serv}.jpg')

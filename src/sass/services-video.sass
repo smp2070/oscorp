@@ -1,0 +1,92 @@
+.video
+  +sm(padding-top, 50px)
+  &__inner
+    padding-bottom: 270px
+    padding-top: 110px
+    +lg(padding, 50px 0)
+    +sm(padding, 15px 0)
+  &__content
+    display: grid
+    grid-template-columns: 12fr 10fr
+    grid-column-gap: 50px
+    +lg-block()
+      grid-template-columns: 1fr
+      justify-items: center
+      grid-row-gap: 30px
+    +sm(grid-gap, 15px)
+  &__left
+    position: relative
+    justify-self: end
+    align-self: end
+    max-width: 645px
+    padding: 50px
+    margin: 15px
+    +lg(justify-self, center)
+    +sm-block()
+      max-width: 100%
+      padding: 20px
+    p
+      +sm(padding, 0)
+  &__right
+    align-self: center
+    +lg(order, -1)
+  &__text
+    &::before
+      border-left: 4px solid #000
+      left: 0
+    &::after
+      border-right: 4px solid #000
+      right: 0
+    &::before,
+    &::after
+      content: ''
+      position: absolute
+      bottom: 0
+      width: 45px
+      height: 40px
+      border-bottom: 4px solid #000
+      +sm-block()
+        width: 19px
+        height: 19px
+        border-width: 3px
+  &__title
+    line-height: 1
+    +sm-block()
+      margin-bottom: 12px
+      margin-right: 20px
+      padding: 0 15px
+  &__desc
+    &::before
+      border-left: 4px solid #000
+      left: 0
+    &::after
+      content: 'REC \25CF'
+      border-right: 4px solid #000
+      right: 0
+      color: #A60404
+      font-size: 20px
+      line-height: 2.2
+      text-indent: -20px
+      font-family: 'Open Sans', sans-serif
+      font-weight: 800
+      animation: rec 1s linear infinite alternate
+      +sm-block()
+        font-size: 10px
+        text-indent: -10px
+    &::before,
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      width: 45px
+      height: 40px
+      border-top: 4px solid #000
+      +sm-block()
+        width: 19px
+        height: 19px
+        border-width: 3px
+@keyframes rec
+  from
+    content: 'REC \25CF'
+  to
+    content: 'REC '

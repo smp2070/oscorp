@@ -1,0 +1,39 @@
+.strategy
+	+sm(padding-top, 50px)
+	&__inner
+		padding: 110px 0 295px 0
+		+lg(padding, 50px 0)
+		+sm(padding, 0 0 30px)
+	&__content
+		display: grid
+		grid-template-columns: 12fr 10fr
+		grid-column-gap: 50px
+		+lg(grid-template-columns, 1fr)
+		+lg(grid-row-gap, 30px)
+		+sm(grid-row-gap, 15px)
+	&__left
+		justify-self: end
+		align-self: end
+		max-width: 690px
+		padding: 0 15px
+		+lg(justify-self, center)
+		+sm(max-width, 100%)
+		img
+			+lg-block()
+				padding: 0
+				margin: 0 auto
+		p
+			+sm(padding, 0)
+	&__right
+		align-self: start
+		+lg(order, -1)
+		+lg(margin, 0 auto)
+	&__text
+		p
+			padding-bottom: 50px
+			line-height: 1.66
+			+lg(padding-bottom, 0)
+			+sm(line-height, 1.5625)
+	&__title
+		+sm-block()
+			margin: 10px 15px 20px

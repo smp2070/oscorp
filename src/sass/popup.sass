@@ -1,0 +1,41 @@
+.popup
+  position: fixed
+  background-color: rgba(0,0,0,.43)
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+  z-index: 2
+  &__inner
+    background-color: #000
+    color: #fff
+    min-width: 1095px
+    max-width: 1200px
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    padding: 60px 30px 60px 75px
+    +lg(min-width, 80%)
+    +sm(min-width, initial)
+  &__title
+    font-family: 'Open Sans'
+    font-weight: 700
+    font-size: 64px
+    color: #fff
+    margin-bottom: 30px
+    line-height: 1.421875
+    padding-right: 80px
+  &__info
+    display: flex
+    align-items: flex-end
+  &__content
+    max-width: 570px
+    margin-right: 15px
+  &__close
+    font-size: 30px
+    position: absolute
+    right: 75px
+    top: 50px
+    line-height: 1
+    cursor: pointer

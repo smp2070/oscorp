@@ -1,0 +1,62 @@
+.sem
+	+sm(padding-top, 50px)
+	&__title
+    +sm(margin-bottom, 12px)
+    +sm(padding, 0 15px)
+	&__inner
+		padding-bottom: 270px
+		padding-top: 112px
+		+lg(padding, 50px 0)
+		+sm(padding, 15px 0)
+	&__content
+		display: grid
+		grid-template-columns: 12fr 10fr
+		grid-column-gap: 50px
+		+lg-block()
+			grid-template-columns: 1fr
+			justify-items: center
+			grid-row-gap: 30px
+		+sm-block()
+			grid-template-columns: 1fr
+			grid-gap: 15px
+	&__left
+		position: relative
+		justify-self: end
+		align-self: end
+		max-width: 690px
+		padding: 0 15px
+		+lg(justify-self, center)
+		+sm(max-width, 100%)
+		&::before
+			content: ""
+			background: url('/img/services_sem-lupa.png') no-repeat center
+			background-size: contain
+			position: absolute
+			top: -40px
+			right: 75px
+			width: 600px
+			height: 300px
+			+lg(display, none)
+		p
+			+sm(padding, 0)
+	&__right
+		align-self: start
+		+lg(order, -1)
+	&__text
+		padding-top: 255px
+		+lg-block()
+			position: relative
+			padding-top: 0
+			padding-bottom: 300px
+		+sm(padding-bottom, 200px)
+		&::before
+			+lg-block()
+				content: ""
+				background: url('/img/services_sem-lupa.png') no-repeat center
+				background-size: contain
+				position: absolute
+				bottom: 0
+				right: 0
+				left: 0
+				height: 300px
+			+sm(height, 200px)

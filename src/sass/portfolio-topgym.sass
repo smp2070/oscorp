@@ -1,0 +1,354 @@
+.box-red
+	position: relative
+	text-transform: uppercase
+.box-red:before
+	content: ''
+	background: #E21B3D
+	transform: skewX(144deg)
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+.box-red h2
+	position: relative
+	color: #fff
+	padding: 0 45px
+
+
+
+.topgym
+	margin-bottom: 165px
+	+sm(padding-top, 50px)
+	&__bottom
+		display: grid
+		grid-template-columns: 1fr 1fr
+		grid-column-gap: 20px
+		align-items: end
+	&__bottom-info
+		max-width: 500px
+		padding-right: 15px
+
+.topgym-top
+	position: relative
+	max-width: 1920px
+	margin: 0 auto 32px
+	background: url('/img/portfolio_topgym-bg.jpg')
+	background-repeat: no-repeat
+	background-position-x: 80%
+	&__inner
+		display: inline-flex
+		flex-direction: column
+		justify-content: center
+		height: 830px
+		& > *
+			align-self: flex-start
+	&__text
+		display: inline-block
+		background-color: #eee
+		p
+			display: inline-block
+			padding: 20px
+	&__skew
+		position: absolute
+		display: inline-block
+		padding: 15px 0
+		top: 0
+		&--txt
+			margin: 0
+			position: relative
+			color: #fff
+			padding: 0 85px
+			line-height: 1
+			text-transform: uppercase
+
+			font-size: 60px
+			text-transform: uppercase
+			font-weight: 300
+			font-family: 'Open Sans', sans-serif
+		&:before
+			content: ''
+			background: #E21B3D
+			transform: skewX(144deg)
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+
+
+.topgym__skew
+  position: relative
+  z-index: 2
+  span
+    color: #fff
+    font-size: 60px
+    text-transform: uppercase
+    font-weight: 300
+    font-family: 'Open Sans', sans-serif
+    background: #e31537
+    display: block
+    text-align: center
+    &::before, &::after
+      content: ""
+      width: 70px
+      height: 100%
+      position: absolute
+      top: 0
+    &::before
+      left: 0
+    &::after
+      right: 0
+
+.topgym__skew span
+	color: #fff
+	font-size: 60px
+	text-transform: uppercase
+	font-weight: 300
+	font-family: 'Open Sans', sans-serif
+	background: #e31537
+	display: block
+	text-align: center
+	margin: 0 70px
+
+.topgym__skew span::before
+	left: 0
+	background: linear-gradient(to left top, #E21B3D 50%, transparent 50%)
+.topgym__skew span::after
+	right: 0
+	background: linear-gradient(to left top, transparent 50%, #E21B3D 50%)
+
+
+.topgym__skew--white span
+	color: #373737
+	background: #fff
+	font-weight: bold
+	&:before
+		background: linear-gradient(to left top, #fff 50%, transparent 50%)
+	&:after
+		background: linear-gradient(to left top, transparent 50%, #fff 50%)
+
+.topgym__skew--noleft span::before, .topgym__skew--noright span::after
+  background: none
+.topgym__skew--noleft span
+	padding-left: 70px
+	margin-left: 0
+.topgym__skew--noright span
+	padding-right: 70px
+	margin-right: 0
+.topgym__skew--mb
+	margin-bottom: 8px
+
+
+
+
+.topgym-about
+	display: grid
+	grid-template-columns: 1fr max-content
+	grid-gap: 20px
+	max-width: 1520px
+	margin: 0 auto
+	margin-bottom: 146px
+	&__left
+		margin-top: 80px
+	&__right
+		margin: 0 auto
+	&__skew
+		position: relative
+		display: inline-block
+		padding: 15px 0
+		margin-left: 34px
+		margin-bottom: 34px
+		&:before
+			content: ''
+			background: #E21B3D
+			transform: skewX(144deg)
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+		&--txt
+			margin: 0
+			position: relative
+			color: #fff
+			padding: 0 68px
+			line-height: 1
+
+	&--text
+		max-width: 644px
+		line-height: 30px
+		margin: 0 40px 35px
+	&--link
+		margin: 0 40px
+
+.topgym-smm
+	display: grid
+	grid-template-columns: max-content 600px
+	grid-template-columns: max-content 530px
+	justify-content: center
+	margin-bottom: 132px
+	&__skew
+		position: absolute
+		display: inline-block
+		padding: 15px 0
+		margin-left: -34px
+		margin-bottom: 34px
+		top: 55px
+		left: 100%
+		z-index: -1
+		&--txt
+			margin: 0
+			position: relative
+			color: #fff
+			padding: 0 85px
+			line-height: 1
+			text-transform: uppercase
+		&:before
+			content: ''
+			background: #E21B3D
+			transform: skewX(-144deg)
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+	&__left
+		position: relative
+		z-index: 2
+	&__right
+		position: relative
+		&--inner
+			margin-top: 180px
+			display: inline-block
+			top: 55px
+			right: -296px
+			z-index: -1
+		&--txt
+			margin: 0
+			margin-top: 180px
+			position: relative
+			color: #000
+			font-style: normal
+			font-weight: normal
+			line-height: 30px
+			font-size: 18px
+			padding: 15px 15px 15px 26px
+			background-color: #eee
+			&:before
+				content: ""
+				background: linear-gradient(to left top, transparent 50%, #eeeeee 50%)
+				width: 70px
+				height: 100%
+				display: block
+				position: absolute
+				top: 0
+				left: 100%
+
+
+@media screen and (max-width: 1200px)
+	.topgym
+		&__about
+			grid-template-columns: 1fr
+			margin-bottom: 32px
+			&__left
+				padding-left: 15px
+
+	.topgym-about
+		grid-template-columns: 1fr
+		grid-gap: 32px
+		&__left
+			padding: 0 15px
+		&--text
+			margin: 0 0 32px
+			max-width: none
+		&--link
+			margin: 0
+	.topgym-smm
+		grid-row-gap: 30px
+		padding: 0
+		&__right
+			&--txt
+				// margin: 0
+				padding-right: 80px
+				&:before
+					left: initial
+					right: 0
+					background: linear-gradient(to right bottom, #0000 50%, #fff 50%)
+
+
+@media screen and (max-width: 992px)
+	.topgym-about
+		margin-bottom: 32px
+	.topgym-smm
+		grid-template-columns: 1fr
+		margin-bottom: 45px
+		margin-bottom: 32px
+		&__right
+			padding-right: 15px
+			&--txt
+				margin: 0
+		&__left
+			padding-left: 15px
+			justify-self: start
+
+
+@media screen and (max-width: 767px)
+	.topgym
+		margin-bottom: 60px
+		&__about
+
+		&__bottom
+			grid-template-columns: 1fr
+			grid-row-gap: 30px
+		&__bottom-info
+			max-width: none
+			padding: 0 15px
+		&__skew
+			// display: none // // // // //
+	.topgym-top
+		// background-size: contain
+		background-size: cover
+		background-position-x: right
+		&__inner
+			height: 280px
+			justify-content: flex-end
+			.topgym__skew:last-of-type
+				margin-bottom: 50px
+				span
+					font-size: 19px
+					line-height: 2
+
+	.topgym-about
+		&__left
+			margin: 0
+		&__skew
+			margin-left: -35px
+			margin-bottom: 18px
+			&--txt
+				padding-right: 20px
+	.topgym-smm
+		&__left
+			padding-left: 15px
+			&--image
+				width: 132px
+		&__skew
+			margin-bottom: 0
+
+
+
+	.topgym__skew span
+		font-size: 24px
+		margin: 0 30px
+
+	.topgym__skew span::before,
+	.topgym__skew span::after
+		width: 30px
+
+	.topgym__skew--noleft span
+		padding-left: 30px
+		margin-left: 0
+
+	.topgym__skew--noright span
+		padding-right: 30px
+		margin-right: 0

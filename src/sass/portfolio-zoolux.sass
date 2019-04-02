@@ -1,0 +1,49 @@
+.zoolux
+	margin-top: 82px
+	margin-bottom: 50px
+	+lg(margin-top, 0)
+	+sm(padding-top, 50px)
+.zoolux-top
+	display: grid
+	grid-template-columns: max-content 1fr
+	grid-column-gap: 60px
+	margin-bottom: 16px
+	+lg-block()
+		grid-template-columns: 1fr
+		grid-row-gap: 20px
+		justify-items: center
+		margin-bottom: 72px
+	&__right-title
+		+lg(margin-top, 0)
+		margin-top: 62px
+		margin-bottom: 20px
+	&__right-txt
+		max-width: 708px
+		line-height: 30px
+		margin-bottom: 52px
+		+sm(line-height, 25px)
+	&__link
+		margin-bottom: 52px
+		+lg(margin-bottom, 0)
+
+.zoolux-bottom
+	display: grid
+	grid-template-columns: 1fr max-content
+	grid-column-gap: 14px
+	+lg-block()
+		grid-template-columns: 1fr
+		grid-row-gap: 40px
+		justify-items: center
+	&__left
+		align-self: end
+	&__left-txt
+		max-width: 708px
+		padding-left: 40px
+		line-height: 30px
+		margin-bottom: 85px
+		+lg-block()
+			padding: 0
+			margin: 0
+		+sm(line-height, 25px)
+	&__right
+		+lg(order, -1)

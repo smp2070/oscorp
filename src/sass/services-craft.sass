@@ -1,0 +1,54 @@
+.craft
+	+sm(padding-top, 50px)
+	&__title
+		+sm(margin-bottom, 12px)
+		+sm(padding, 0 15px)
+	&__inner
+		position: relative
+		background: url('/img/services_craft-pencil.png') no-repeat left top
+		padding: 210px 0 60px
+		margin: 55px 0
+		+lg-block()
+			background: none
+			padding: 50px 0
+			margin: 0
+		+sm(padding, 15px 0)
+	&__content
+		display: grid
+		grid-template-columns: 12fr 10fr
+		grid-column-gap: 50px
+		+lg-block()
+			grid-template-columns: 1fr
+			justify-items: center
+			grid-row-gap: 30px
+		+sm(grid-gap, 15px)
+	&__left
+		justify-self: end
+		align-self: end
+		max-width: 690px
+		padding: 0 15px
+		padding-left: 300px
+		+lg-block()
+			position: relative
+			justify-self: center
+			padding: 0 15px
+			padding-bottom: 200px
+		+sm(max-width, 100%)
+		&::after
+			+lg-block()
+				content: ""
+				background: url('/img/services_craft-pencil-mobile.png') repeat-x center
+				position: absolute
+				left: 0
+				right: 0
+				bottom: 0
+				width: 100%
+				height: 130px
+				box-shadow: inset 0px 0px 10px 12px #fff
+			+sm(height, 150px)
+			+sm(box-shadow, none)
+	&__right
+		align-self: center
+		+lg(order, -1)
+	&__text
+		+lg(padding-top, 0)

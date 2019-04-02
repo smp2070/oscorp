@@ -1,0 +1,68 @@
+$_lg: 1200px
+$_md: 992px
+$_sm: 768px
+$_xs: 600px
+
+=lg($name, $value)
+  @media screen and (max-width: $_lg)
+    #{$name}: $value
+
+=lg-block()
+  @media screen and (max-width: $_lg)
+    @content  
+
+=md($name, $value)
+  @media screen and (max-width: $_md)
+    #{$name}: $value
+
+=md-block()
+  @media screen and (max-width: $_md)
+    @content
+
+=sm($name, $value)
+  @media screen and (max-width: $_sm)
+    #{$name}: $value
+
+=sm-block()
+  @media screen and (max-width: $_sm)
+    @content
+
+=xs($name, $value)
+  @media screen and (max-width: $_xs)
+    #{$name}: $value
+
+=xs-block()
+  @media screen and (max-width: $_xs)
+    @content
+
+=lg-m($name, $value)
+  @media screen and (min-width: $_lg)
+    #{$name}: $value
+
+=lg-block-m()
+  @media screen and (min-width: $_lg)
+    @content  
+
+=md-m($name, $value)
+  @media screen and (min-width: $_md)
+    #{$name}: $value
+
+=md-block-m()
+  @media screen and (min-width: $_md)
+    @content
+
+=sm-m($name, $value)
+  @media screen and (min-width: $_sm)
+    #{$name}: $value
+
+=sm-block-m()
+  @media screen and (min-width: $_sm)
+    @content
+
+=xs-m($name, $value)
+  @media screen and (min-width: $_xs)
+    #{$name}: $value
+
+=xs-block-m()
+  @media screen and (min-width: $_xs)
+    @content

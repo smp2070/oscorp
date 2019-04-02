@@ -1,0 +1,34 @@
+.links
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-auto-rows: 140px
+  grid-column-gap: 13%
+  margin-bottom: 150px
+  +xs-block()
+    grid-template-columns: 1fr
+    grid-auto-rows: 75px
+    grid-row-gap: 28px
+    margin-top: 0
+    margin-bottom: 38px
+  &__flex
+    display: flex
+    align-items: flex-end
+    padding: 13px 30px
+    +xs(padding, 7px 15px)
+  &__txt
+    color: #fff
+    font-family: 'Open Sans', sans-serif
+    font-weight: 800
+    font-size: 48px
+    +lg(font-size, 30px)
+    +xs(font-size, 24px)
+  &__left
+    background-image: linear-gradient(rgba(19,19,19,.57),rgba(19,19,19,.57)), url('/img/boxes_left.jpg')
+    justify-content: flex-end
+    background-position-x: right
+    &:hover
+      background-image: linear-gradient(rgba(188,0,0,.43), rgba(188,0,0,.43)), url('/img/boxes_left.jpg')
+  &__right
+    background-image: linear-gradient(rgba(19,19,19,.57),rgba(19,19,19,.57)), url('/img/boxes_right.jpg')
+    &:hover
+      background-image: linear-gradient(rgba(188,0,0,.43), rgba(188,0,0,.43)), url('/img/boxes_right.jpg')

@@ -1,0 +1,57 @@
+.baku
+	+sm(padding-top, 50px)
+	&__title
+		margin-bottom: 20px
+		+lg(padding, 0)
+		+sm-block()
+			font-size: 24px
+			padding: 0 15px
+	&__txt
+		max-width: 680px
+		&--first
+			margin-bottom: 30px
+		&--second
+			margin-bottom: 62px
+			+lg-block()
+				order: -1
+				margin-bottom: 30px
+			+sm(font-size, 16px)
+
+.baku-bg
+	max-width: 1920px
+	margin: 0 auto
+
+.baku-box
+	padding-top: 140px
+	padding-bottom: 38px
+	+lg(padding-top, 30px)
+
+.baku-flex-first,
+.baku-flex-second
+	display: flex
+	padding: 0 40px
+	justify-content: space-between
+	+lg-block()
+		flex-direction: column
+		padding: 0
+
+.baku-flex-first
+	margin-bottom: 87px
+	+lg-block()
+		margin-bottom: 0
+		align-items: center
+	&__left
+		margin-right: 15px
+		+lg-block()
+			margin-right: 0
+			margin-bottom: 20px
+	&__right
+		+lg(margin, 0 auto 20px)
+
+.baku-flex-second
+	align-items: flex-end
+	+lg(align-items, center)
+	&__image
+		padding-left: 100px
+		padding-right: 90px
+		+lg(padding, 0)
