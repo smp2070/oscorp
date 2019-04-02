@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Overdrive from 'react-overdrive';
 import InputMask from 'react-input-mask';
 import Popup from './Popup';
 // import Select from 'react-select';
@@ -87,6 +88,7 @@ class Contacts extends Component {
       }
     };
     return (
+
       <div className="contacts">
         {showPopup ? <Popup closePopup={this.togglePopup.bind(this)}/> : null}
         {isDropdown ? <div className="backdrop" onClick={this.isDropdown} /> : null}
@@ -142,6 +144,8 @@ class Contacts extends Component {
             </div>
           </div>
         </div>
+        <Overdrive id="test">
+     
         <div className="contacts__map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1303.1268897662828!2d28.437197813829734!3d49.214714033434205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5c8a14edc06f%3A0xb2e9ca2d93a84f63!2sOscorp.pro!5e0!3m2!1sru!2sua!4v1536133075650"
@@ -152,6 +156,7 @@ class Contacts extends Component {
             title="Карта"
           ></iframe>
         </div>
+        </Overdrive>
         <div className="contacts__info">
           <div className="contacts__address">
             <p>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Overdrive from 'react-overdrive';
 import { Link } from 'react-router-dom';
 
 class Portfolio extends Component {
@@ -56,7 +57,9 @@ class Portfolio extends Component {
       <div className="portfolio">
         <div className="wrapper">
           <ul className="portfolio__tabs">{tabsList}</ul>
-          <div className="portfolio__box" ref="cards">{cards}</div>
+          <Overdrive id="test">
+            <div className="portfolio__box" ref="cards">{cards}</div>
+          </Overdrive>
         </div>
       </div>
     )
