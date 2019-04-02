@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-// import './App.css';
 import Home from './components/Home';
 import About from './components/About';
 
@@ -10,7 +9,6 @@ import ServicesVideo from './components/ServicesVideo';
 import ServicesDevelopment from './components/ServicesDevelopment';
 import ServicesStrategy from './components/ServicesStrategy';
 import ServicesSMM from './components/ServicesSMM';
-// import ServicesCraft from './components/ServicesCraft';
 import ServicesDesign from './components/ServicesDesign';
 import ServicesAd from './components/ServicesAd';
 import ServicesEmailMarketing from './components/ServicesEmailMarketing';
@@ -35,43 +33,8 @@ import Footer from './components/Footer';
 
 
 class App extends Component {
-  // constructor() {
-  //   super()
-  //   this.state = {
-  //     // json: {
-  //     //   about: {left: {title: '', description: ''}, right: {title: '', description: ''}}
-  //     // }
-  //     json: {}
-  //   }
-  //   fetch('http://localhost:3000/js/json.json')
-  //     .then(data => data.json())
-  //     .then(data => {
-  //       // console.log(data);
-  //       this.setState({json: data})
-  //     });
-  // }
-  //
-  //
-  // componentDidMount() {
-  //   console.log('app is mounted')
-  // }
 
   render() {
-
-    // let json = {}
-    // fetch('http://localhost:3000/js/json.json')
-    //   .then(data => data.json())
-    //   .then(data => {
-    //     // console.log(data);
-    //     // this.setState({json: data})
-    //   });
-
-    // fetch('http://localhost:3000/js/json.json')
-    //   .then(data => data.json())
-    //   .then(data => {
-    //     console.log(data);
-    //     const json = data
-    //   });
 
     const menu = [
       {title: 'наши работы', url: 'portfolio'},

@@ -13,7 +13,7 @@ var about = {
 
 
 
-/* url не менять */
+
 var services = [
 	[
 		{url: 'strategy', title: 'digital strategy', img: {backgroundImage: 'url("/img/services_strategy.jpg")'} },
@@ -92,7 +92,7 @@ var servicesInner = {
 
 var portfolio = [
   {id: 1, label: [1,4], url: 'diadema', imageUrl: '/img/p01.jpg', title: 'Diadema', descr: '1,4 Nam dapibus molestie. Nam dapibus molestie. Nam dapibus molestie. Nam dapibus molestie.'},
-  {id: 2, label: [2], url: 'diamo', imageUrl: '/img/portfolio-diamo.jpg', title: 'diamo', descr: 'Some text about project. Some text about project. Some text about project. Some text about project.'},
+  {id: 2, label: [2], url: 'diamo', imageUrl: '/img/portfolio_diamo-ring.png', title: 'diamo', descr: 'Some text about project. Some text about project. Some text about project. Some text about project.'},
   {id: 3, label: [3], url: 'topgym', imageUrl: '/img/portfolio-top-gym.jpg', title: 'Top gym', descr: 'Nam dapibus molestie massa ac maximus.'},
   {id: 4, label: [4], url: 'magik', imageUrl: '/img/portfolio-magic.png', title: 'Magik', descr: '4Nam dapibus molestie massa ac maximus.'},
   {id: 5, label: [1,3], url: 'baku', imageUrl: '/img/portfolio-baku.jpg', title: 'Огни баку', descr: 'Nam dapibus molestie massa ac maximus.'},

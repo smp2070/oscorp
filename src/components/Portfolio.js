@@ -3,37 +3,14 @@ import { Link } from 'react-router-dom';
 
 class Portfolio extends Component {
 
-  componentDidMount() {
-    // console.log( [...this.refs.cards.querySelectorAll('.portfolio__item')] );
-    // this.refs.cards.
-    // test()  {
-    //   const item = this.refs['test'+i]
-    //   console.log( item.parentNode.style.setProperty('--weight',  Math.ceil(item.height / 5) + Math.ceil(item.nextElementSibling.clientHeight / 5) ) )
-    // }
-    // let i = 0;
-    // while()
-  }
   state = {
     portfolio: [...window.portfolio],
     items: [...window.portfolio],
     height: [],
     activeTab: 0
   }
-  test(i)  {
-    const height = [...this.state.height]
 
-    const item = this.refs['test'+i]
-    const sibling = this.refs['test'+(i+1)]
-
-    // console.log(item)
-    const counted = Math.ceil(item.height / 5) + 14
-    height.splice(i, 1, counted)
-    console.log(height)
-    console.log(counted)
-    this.setState({height: height})
-
-  }
-  activeTab = (i) => this.state.activeTab == i ? 'portfolio__tab--active' : '';
+  activeTab = (i) => this.state.activeTab === i ? 'portfolio__tab--active' : '';
 
   filter(i) {
     const { portfolio } = this.state
@@ -65,7 +42,7 @@ class Portfolio extends Component {
             alt={`${v.imageUrl}`}
             className="portfolio__image"
             ref={'test'+i}
-            onLoad={this.test.bind(this, i)}
+            
           />
           <div>
             <h4 className="portfolio__item-title">{v.title}</h4>
