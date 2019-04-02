@@ -1,8 +1,11 @@
 import React from 'react';
 import Overdrive from 'react-overdrive';
 
+import { database } from '../services/firebase';
+
 function About(props) {
     const { left, right } = window.about
+    // const datab
     return (
       <Overdrive id="test">
         <div className="about">
