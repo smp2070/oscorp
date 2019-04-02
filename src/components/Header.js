@@ -13,17 +13,6 @@ class Header extends Component {
     const { headerMenu: menu, location: { pathname : path } } = this.props;
     const { isMobMenuActive } = this.state;
 
-
-    // const isPortfolioInner = (/\/portfolio\/.+/).test(path);
-    // const addPortfolioClass = isPortfolioInner ? 'header__nav-link--portfolio' : '';
-    //
-    // let logo;
-    // if(isPortfolioInner && window.innerWidth >= 1200) {
-    //   logo = '/img/oscorp_logo-white.png';
-    // }else{
-    //   logo = '/img/new_oscorp_logo.png';
-    // }
-
     const addPortfolioClass = '';
     const logo = '/img/new_oscorp_logo.png';
 

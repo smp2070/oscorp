@@ -10,11 +10,6 @@ const PortfolioDiadema = () => {
 	  		<img className="diadema-bg-top__img" src="/img/portfolio_diadema-top_bg.jpg" alt="portfolio_diadema-top_bg"/>
 	  	</div>
 
-      {/* <div className="overlay">
-        <Link to="/">Предыдущий проект</Link>
-        <Link to="/">следующий проект</Link>
-      </div> */}
-
   		<div className="diadema__top diadema__grid">
   			<div className="diadema__top-content">
   				<h2 className="diadema__title desktop">{diadema.titleTop}</h2>

@@ -34,7 +34,7 @@ class Contacts extends Component {
   isDropdown = () => this.setState({isDropdown: !this.state.isDropdown})
 
   onSubmit = e => {
-    const form = e.target
+    const form = e.target;
     e.preventDefault();
     // fetch('http://new.oscorp.pro/ajax/feedback.php', {method: 'POST', body: new FormData(form)})
     fetch('/ajax/feedback.php', {method: 'POST', body: new FormData(form)})
