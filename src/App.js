@@ -47,34 +47,36 @@ class App extends Component {
       <Router>
         <React.Fragment>
           <Route path="/" render={props => ( props.location.pathname !== "/") && <Header headerMenu={menu}/> }/>
-          <Switch>
-            <Route exact path="/" render={props => <Home homeMenu={menu}/>}/>
-            <Route path="/about" component={About}/>
-            <Route path="/contacts" component={Contacts}/>
+          <main className="main">
+            <Switch>
+              <Route exact path="/" render={props => <Home homeMenu={menu}/>}/>
+              <Route path="/about" component={About}/>
+              <Route path="/contacts" component={Contacts}/>
 
-            <Route path="/services/video" component={ServicesVideo}/>
-            <Route path="/services/development" component={ServicesDevelopment}/>
-            <Route path="/services/analytics" component={ServicesAnalytics}/>
-            <Route path="/services/smm" component={ServicesSMM}/>
-            <Route path="/services/design" component={ServicesDesign}/>
-            <Route path="/services/ad" component={ServicesAd}/>
-            <Route path="/services/email-marketing" component={ServicesEmailMarketing}/>
-            <Route path="/services/copywriting" component={ServicesCopywriting}/>
-            <Route path="/services/sem" component={ServicesSEM}/>
-            <Route path="/services/website-content" component={ServicesWebsiteContent}/>
-            <Route exact path="/services" component={Services}/>
+              <Route path="/services/video" component={ServicesVideo}/>
+              <Route path="/services/development" component={ServicesDevelopment}/>
+              <Route path="/services/analytics" component={ServicesAnalytics}/>
+              <Route path="/services/smm" component={ServicesSMM}/>
+              <Route path="/services/design" component={ServicesDesign}/>
+              <Route path="/services/ad" component={ServicesAd}/>
+              <Route path="/services/email-marketing" component={ServicesEmailMarketing}/>
+              <Route path="/services/copywriting" component={ServicesCopywriting}/>
+              <Route path="/services/sem" component={ServicesSEM}/>
+              <Route path="/services/website-content" component={ServicesWebsiteContent}/>
+              <Route exact path="/services" component={Services}/>
 
-            <Route path="/portfolio/diadema" component={PortfolioDiadema}/>
-            <Route path="/portfolio/diamo" component={PortfolioDiamo}/>
-            <Route path="/portfolio/topgym" component={PortfolioTopgym}/>
-            <Route path="/portfolio/magik" component={PortfolioMagik}/>
-            <Route path="/portfolio/baku" component={PortfolioBaku}/>
-            <Route path="/portfolio/zoolux" component={PortfolioZoolux}/>
-            <Route path="/portfolio/cartli" component={PortfolioCartli}/>
-            <Route exact path="/portfolio" component={Portfolio}/>
+              <Route path="/portfolio/diadema" component={PortfolioDiadema}/>
+              <Route path="/portfolio/diamo" component={PortfolioDiamo}/>
+              <Route path="/portfolio/topgym" component={PortfolioTopgym}/>
+              <Route path="/portfolio/magik" component={PortfolioMagik}/>
+              <Route path="/portfolio/baku" component={PortfolioBaku}/>
+              <Route path="/portfolio/zoolux" component={PortfolioZoolux}/>
+              <Route path="/portfolio/cartli" component={PortfolioCartli}/>
+              <Route exact path="/portfolio" component={Portfolio}/>
 
-            <Route component={NoMatch}/>
-          </Switch>
+              <Route component={NoMatch}/>
+            </Switch>
+          </main>
           <Route path="/" render={props => ( props.location.pathname !== "/") && <Footer footerMenu={menu}/> }/>
         </React.Fragment>
     	</Router>
