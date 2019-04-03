@@ -16,7 +16,7 @@ var about = {
 
 var services = [
 	[
-		{url: 'strategy', title: 'digital strategy', img: {backgroundImage: 'url("/img/services_strategy.jpg")'} },
+		{url: 'analytics', title: 'website analytics', img: {backgroundImage: 'url("/img/services_analytics.jpg")'} },
 		{url: 'smm', title: 'SMM', img: {backgroundImage: 'url("/img/services_smm.jpg")'} }
 	],
 	[
@@ -38,10 +38,10 @@ var services = [
 ];
 
 var servicesInner = {
-  strategy: {
-    title: 'digital strategy',
-    descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eleifend risus vel lorem placerat tempus. Nullam ultrices tellus molestie pulvinar ultrices. Nulla facilisi. Aliquam euismod purus quis orci placerat consequat. Proin pulvinar dui neque. Aenean finibus at lorem et tempus. Morbi nec dolor elit. Donec nec enim a elit viverra ornare bibendum id purus. Mauris tincidunt porttitor mauris, sed ultricies erat. Etiam tempus vehicula rutrum. Integer tempor dolor vitae tincidunt aliquet. Nulla feugiat feugiat eleifend. Donec eu arcu lorem. Praesent eget dolor lacus.',
-    img: '/img/services_strategy.jpg'
+  analytics: {
+    title: 'website analytics',
+    descr: 'Анализ эффективности Ваших рекламных каналов для увеличения доходов',
+    img: '/img/service_analytics--large.jpg'
   },
   smm: {
     title: 'social media marketing',

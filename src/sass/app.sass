@@ -1,21 +1,12 @@
-// @font-face
-//   font-family: 'Museo Sans Light'
-//   src: url('/fonts/MuseoSansCyrl-300.woff') format('woff')
-//   font-weight: 300
-//   font-style: normal
-// @font-face
-//   font-family: 'Museo Sans Medium'
-//   src: url('/fonts/MuseoSansCyrl-500.woff') format('woff')
-//   font-weight: 500
-//   font-style: normal
-// @font-face
-//   font-family: 'Museo Sans Bold'
-//   src: url('/fonts/MuseoSansCyrl-700.woff') format('woff')
-//   font-weight: 700
-//   font-style: normal
 
-html,body,ul,h1,h2,h3,h4,p
+*
   margin: 0
+  padding: 0
+  box-sizing: border-box
+  &:before,
+  &:after
+    box-sizing: border-box
+
 html
   --main-color: #131313
 body
@@ -50,6 +41,8 @@ img
   display: block
   max-width: 100%
   height: auto
+main
+  +sm(padding-top, 50px)
 iframe
   display: block
 .desktop
@@ -125,3 +118,11 @@ button[type="submit"][disabled]
   left: 0
   bottom: 0
   right: 0
+
+.container
+  width: 100%
+  max-width: 1550px
+  padding-right: 15px
+  padding-left: 15px
+  margin-right: auto
+  margin-left: auto

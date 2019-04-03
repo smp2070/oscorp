@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react'
 import Overdrive from 'react-overdrive';
 
-import { database } from '../services/firebase';
+export default class About extends Component {
 
-function About(props) {
+  render() {
     const { left, right } = window.about
-    // const datab
+
     return (
       <Overdrive id="test">
         <div className="about">
@@ -33,7 +33,6 @@ function About(props) {
           </div>
         </div>
       </Overdrive>
-    );
+    )
+  }
 }
-
-export default About;

@@ -7,7 +7,7 @@ import About from './components/About';
 import Services from './components/Services';
 import ServicesVideo from './components/ServicesVideo';
 import ServicesDevelopment from './components/ServicesDevelopment';
-import ServicesStrategy from './components/ServicesStrategy';
+import ServicesAnalytics from './components/ServicesAnalytics';
 import ServicesSMM from './components/ServicesSMM';
 import ServicesDesign from './components/ServicesDesign';
 import ServicesAd from './components/ServicesAd';
@@ -54,7 +54,7 @@ class App extends Component {
 
             <Route path="/services/video" component={ServicesVideo}/>
             <Route path="/services/development" component={ServicesDevelopment}/>
-            <Route path="/services/strategy" component={ServicesStrategy}/>
+            <Route path="/services/analytics" component={ServicesAnalytics}/>
             <Route path="/services/smm" component={ServicesSMM}/>
             <Route path="/services/design" component={ServicesDesign}/>
             <Route path="/services/ad" component={ServicesAd}/>
